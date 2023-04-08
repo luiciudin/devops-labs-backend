@@ -22,7 +22,7 @@ if (!builder.Environment.IsEnvironment("Local"))
 {
     builder.WebHost.UseKestrel(configure =>
     {
-        configure.Listen(System.Net.IPAddress.Any, 4000);
+        configure.Listen(System.Net.IPAddress.Any, 8080);
         configure.Listen(System.Net.IPAddress.Any, 80);
     });
 }
